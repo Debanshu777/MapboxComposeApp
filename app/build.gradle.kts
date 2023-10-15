@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
-    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 android {
     namespace = "com.debanshudatta.dummyapplication"
@@ -69,4 +68,7 @@ dependencies {
 
     implementation(libs.maps.compose)
     implementation(libs.android)
+    implementation(libs.permission.flow.compose)
+    implementation(libs.play.services.location)
+    implementation(libs.kotlinx.coroutines.play.services)
 }
